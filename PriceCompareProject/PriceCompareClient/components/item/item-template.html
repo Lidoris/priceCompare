@@ -1,0 +1,15 @@
+﻿<div class="item" ng-click="$event.stopPropagation();">
+    <div class="row">
+        <div class="col-md-1 img-div ">
+            <img class="item-img" src="../../Capture.PNG" />
+        </div>
+        <div class="col-md-7 content-div">
+            <div class="name">{{$ctrl.item.itemName}}</div>
+            <div class="description">{{$ctrl.item.description}}</div>
+            <div class="quantity">{{$ctrl.item.quantity}} {{$ctrl.item.unitQty}}</div>
+        </div>
+        <input class="col-md-2 amount" ng-model="$ctrl.amount" type="number" value="1" min="1" max="9" />
+        <button class="col-md-1 btn-info add" ng-click="$ctrl.addItemToShoppingCart()">הוסף</button>
+    </div>
+    <div class="separatore row"></div>
+</div>

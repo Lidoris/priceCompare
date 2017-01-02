@@ -1,0 +1,20 @@
+﻿<div class="result-page">
+    <div class="container">
+        <div class="row header">
+            <div class="num-of-products-label">
+                <div class="shopping-cart-label"> סל קניות</div>
+                <div> {{$ctrl.chainsService.numOfAllItems}} מוצרים </div>
+            </div>
+        </div>
+        <div class="row title-site">
+            השוואת סל המוצרים הנבחר
+        </div>
+        <div class="row main">
+            <div class="col-md-4" ng-class="{'col-md-offset-2' :$index == 0 && $ctrl.chainsService.numOfStoresToCompare ==2}" ng-repeat="resultStorePrices in $ctrl.chainsService.results" >
+               
+                <store-result item="resultStorePrices" index="$index">
+                </store-result>
+            </div>
+        </div>
+    </div>
+</div>

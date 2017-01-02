@@ -1,0 +1,1 @@
+{"version":3,"file":"shopping-cart-item-component.js","sourceRoot":"","sources":["shopping-cart-item-component.ts"],"names":[],"mappings":"AAAA,GAAG,CAAC,SAAS,CAAC,kBAAkB,EAC5B;IACI,WAAW,EAAE,gEAAgE;IAC7E,UAAU,EAAE,0BAA0B;IACrC,QAAQ,EAAE;QACN,cAAc,EAAE,GAAG;KACvB;CAEJ,CAAC,CAAC"}

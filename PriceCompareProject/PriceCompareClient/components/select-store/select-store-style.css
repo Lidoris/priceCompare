@@ -1,0 +1,38 @@
+﻿.select-store .single-store {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.select-store .choose-store {
+  margin-right: 5%;
+  text-align: right;
+  display: inline;
+  font-weight: bold;
+  font-size: larger;
+}
+.select-store .chain {
+  margin-left: 5px;
+  width: 25%;
+  display: inline;
+}
+.select-store .store {
+  width: 25%;
+  display: inline;
+}
+.select-store .form-control {
+  height: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: x-small;
+}
+.select-store .addStore {
+  padding: 0;
+  font-weight: bold;
+  color: #84d9f2;
+}
+.select-store .hide {
+  display: none;
+}
+.select-store .col-md-4 {
+  float: right !important;
+}

@@ -1,0 +1,61 @@
+﻿<div class="shopping-cart row">
+    <div class="row">
+        <div class="col-md-1">
+            <label class="search-label"> חפש</label>
+        </div>
+        <div class="dropdown col-md-9">
+            <div class="left-inner-addon">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="text"
+                       id="search"
+                       class="filter-input"
+                       uib-typeahead="x.itemName for x in $ctrl.chainsService.items | filter:{itemName:$viewValue} |  limitTo:5"
+                       typeahead-popup-template-url="customPopupTemplate.html"
+                       ng-model="selected" />
+            </div>
+        </div>
+        <div class="col-md-2">
+            <a href="#/resultPage" class="btn-info btn" ng-click="$ctrl.comparePrices()" ng-class="{disabled:$ctrl.chainsService.shoppingCart.length==0}"> השווה סל קניות </a>
+        </div>
+    </div>
+    <div class="row title-items">
+        <div class="col-md-5 title-label">
+            שם המוצר
+        </div>
+        <div class="col-md-3 title-label">
+            יח/משקל
+        </div>
+        <div class="col-md-4 title-label">
+            כמות להוספה
+        </div>
+    </div>
+
+
+    <div class="row empty-cart" ng-show="$ctrl.chainsService.shoppingCart.length === 0">
+        הסל שלך ריק, הוסף מוצרים לסל
+    </div>
+
+    <div class="shopping-cart-items" ng-repeat="item in $ctrl.chainsService.shoppingCart">
+        <shopping-cart-item item-with-amount="item"/>
+    </div>
+</div>
+
+<script type="text/ng-template" id="customPopupTemplate.html">
+    <div class="custom-popup-wrapper"
+         ng-style="{top: position().top+'px', left: position().left+'px'}"
+         
+         ng-show="isOpen() && !moveInProgress"
+         aria-hidden="{{!isOpen()}}">
+        <ul class="dropdown-menu items"
+            role="listbox">
+            <li class="uib-typeahead-match item"
+                style="display:block"
+                ng-repeat="match in matches"
+               
+                role="option"
+                id="{{::match.model.itemID}}">
+              <item item="match.model"></item>
+            </li>
+        </ul>
+    </div>
+</script>

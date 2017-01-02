@@ -1,0 +1,38 @@
+﻿<div class="select-store">
+
+
+    <div class="row single-store">
+        <span class="col-md-4 choose-store">בחר חנות 1</span>
+        <select class="col-md-4 chain form-control" ng-options="chain.chainName for chain in $ctrl.chainsService.chains" ng-model="$ctrl.chainsService.selectedChains[0]">
+            <option selected hidden value="">בחר רשת</option>
+        </select>
+        <select class="col-md-4 store  form-control" ng-options="store.storeName for store in $ctrl.chainsService.selectedChains[0].stores" ng-model="$ctrl.chainsService.selectedStores[0]" ng-change="$ctrl.updateItems()">
+            <option selected hidden value="">בחר חנות</option>
+        </select>
+    </div>
+
+
+
+    <div class="row single-store">
+        <span class="col-md-4 choose-store">בחר חנות 2</span>
+        <select class="col-md-4 chain  form-control" ng-options="chain.chainName for chain in $ctrl.chainsService.chains" ng-model="$ctrl.chainsService.selectedChains[1]">
+            <option selected hidden value="">בחר רשת</option>
+        </select>
+        <select class="col-md-4 store  form-control" ng-options="store.storeName for store in $ctrl.chainsService.selectedChains[1].stores" ng-model="$ctrl.chainsService.selectedStores[1]">
+            <option selected hidden value="">בחר חנות</option>
+        </select>
+    </div>
+
+    <a ng-click="$ctrl.addStore()"class="addStore col-md-offset-6 col-md-3" ng-hide="$ctrl.chainsService.numOfStoresToCompare==3">הוסף חנות להשוואה</a>
+
+    <div class="row single-store" ng-show="$ctrl.chainsService.numOfStoresToCompare==3" >
+        <span class="col-md-4 choose-store">בחר חנות 3</span>
+        <select class="col-md-4 chain form-control" ng-options="chain.chainName for chain in $ctrl.chainsService.chains" ng-model="$ctrl.chainsService.selectedChains[2]">
+            <option selected hidden value="">בחר רשת</option>
+        </select>
+        <select class="col-md-4 store form-control" ng-options="store.storeName for store in $ctrl.chainsService.selectedChains[2].stores" ng-model="$ctrl.chainsService.selectedStores[2]">
+            <option selected hidden value="">בחר חנות</option>
+        </select>
+    </div>
+
+</div>

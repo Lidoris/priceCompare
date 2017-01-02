@@ -1,0 +1,38 @@
+﻿<div class="store-result" ng-class="{'best-result' :$ctrl.index === $ctrl.chainsService.bestResultIndex}">
+    <div class="best-result-title" ng-show="$ctrl.index ===  $ctrl.chainsService.bestResultIndex">
+        <div class="title">הזול ביותר</div>
+        <div class="left-triangle"></div>
+        <div class="right-triangle"></div>
+    </div>
+    <div class="store-details">
+        <div>
+            <select class="chain-select form-control center-block">
+                <option selected value="$ctrl.resultStorePrices.chain.chainName">{{$ctrl.resultStorePrices.chain.chainName}}</option>
+            </select>
+        </div>
+        <div>
+            <select class="store-select form-control center-block">
+                <option selected value="$ctrl.resultStorePrices.store.storeName">{{$ctrl.resultStorePrices.store.storeName}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="total-price">
+        {{$ctrl.resultStorePrices.totalCostForStore| number : 2 }}
+    </div>
+    <div class="items">
+        <div ng-repeat="price in $ctrl.resultStorePrices.prices">
+            <div class="row">
+                <div class="col-md-8 item-name">
+                    {{price.item.itemName}}
+                </div>
+                <div class="col-md-4 item-price">
+                    {{price.itemPrice | number : 2 }}
+                    <span ng-show="price.itemPrice === undefined">לא במלאי</span>
+                </div>
+            </div>
+            <div class="separatore row"></div>
+        </div>
+    </div>
+
+
+</div>

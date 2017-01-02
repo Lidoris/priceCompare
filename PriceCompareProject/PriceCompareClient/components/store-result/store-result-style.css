@@ -1,0 +1,45 @@
+﻿.store-result {
+  border: 3px solid#e3e9ea;
+  margin: auto;
+  margin-top: 60px;
+}
+.store-result .store-details {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.store-result .store-details .form-control {
+  width: 50%;
+  height: 30px;
+  margin-top: 5px;
+  font-size: smaller;
+}
+.store-result .total-price {
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #394244;
+  color: white;
+}
+.store-result .test:first-child {
+  margin-left: auto;
+}
+.store-result .separatore {
+  height: 1px;
+  background-color: #e9e9e9;
+  margin-right: 10px;
+  margin-top: 10px;
+  bottom: 0px;
+}
+.store-result .items {
+  padding-bottom: 85px;
+}
+.store-result .item-name {
+  font-weight: bold;
+}
+.store-result .col-md-4 {
+  float: right !important;
+}
+.store-result .col-md-8 {
+  float: right !important;
+}

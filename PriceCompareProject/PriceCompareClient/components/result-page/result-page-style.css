@@ -1,0 +1,55 @@
+﻿.result-page .shopping-cart-label {
+  font-weight: bold;
+}
+.result-page .best-result-title .title {
+  background-color: #69af3d;
+  top: 0;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: -30px;
+  margin-left: -18px;
+  margin-right: -18px;
+}
+.result-page .best-result-title .left-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 15px 0;
+  border-color: transparent #4f8a28 transparent transparent;
+  margin-left: -18px;
+  left: 0;
+}
+.result-page .best-result-title .right-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 0;
+  border-color: #4f8a28 transparent transparent transparent;
+  margin-right: -18px;
+}
+.result-page .best-result .total-price {
+  background-color: #69af3d;
+  font-size: x-large;
+}
+.result-page .num-of-products-label {
+  text-align: right;
+  border-left: 1px;
+  padding: 8px;
+  padding-right: 20px;
+}
+.result-page .title-site {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 60px;
+  padding-top: 50px;
+  color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(' http://www.happyharvesterdubai.com/assets/data/box_banner.jpg');
+}
+.result-page .store-result {
+  position: relative;
+}

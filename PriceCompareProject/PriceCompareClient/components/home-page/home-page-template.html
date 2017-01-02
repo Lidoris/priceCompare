@@ -1,0 +1,24 @@
+﻿<div class="home-page">
+    <div class="container">
+        <div class="row header">
+            <div class="num-of-products-label">
+                <div class="shopping-cart-label"> סל קניות</div>
+                <div> {{$ctrl.chainsService.numOfAllItems}} מוצרים </div>
+            </div>
+        </div>
+
+        <div class="row select-stores">
+            <div class="col-md-offset-2 col-md-8 title-site">
+                אתר השוואת המחירים המוביל בישראל
+            </div>
+            <div class="selection col-md-8 col-md-offset-2">
+                <select-store></select-store>
+            </div>    
+        </div>
+
+        <div class="row main">
+            <shopping-cart class="col-md-offset-2 col-md-8 "></shopping-cart>
+        </div>
+    </div>
+   
+</div>

@@ -1,0 +1,38 @@
+﻿[
+  {
+    "outputFile": "Style.css",
+    "inputFile": "Style.less"
+  },
+  {
+    "outputFile": "components/select-store/select-store-style.css",
+    "inputFile": "components/select-store/select-store-style.less"
+  },
+  {
+    "outputFile": "components/home-page/home-page-style.css",
+    "inputFile": "components/home-page/home-page-style.less"
+  },
+  {
+    "outputFile": "components/shopping-cart/shopping-cart-style.css",
+    "inputFile": "components/shopping-cart/shopping-cart-style.less"
+  },
+  {
+    "outputFile": "components/item/item-style.css",
+    "inputFile": "components/item/item-style.less"
+  },
+  {
+    "outputFile": "components/all-items/all-items-style.css",
+    "inputFile": "components/all-items/all-items-style.less"
+  },
+  {
+    "outputFile": "components/shopping-cart-item/shopping-cart-item-style.css",
+    "inputFile": "components/shopping-cart-item/shopping-cart-item-style.less"
+  },
+  {
+    "outputFile": "components/store-result/store-result-style.css",
+    "inputFile": "components/store-result/store-result-style.less"
+  },
+  {
+    "outputFile": "components/result-page/result-page-style.css",
+    "inputFile": "components/result-page/result-page-style.less"
+  }
+]
